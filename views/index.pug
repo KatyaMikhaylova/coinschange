@@ -7,8 +7,9 @@ html
 
     body
       nav
-      if (!view)
-        .count_field
+      main
+        if (!view)
+          .count_field
             .inner_count
                 h1 Произвести размен
                     span Пожалуйста, заполните все поля
@@ -35,8 +36,8 @@ html
 
                       br
                       input.btn(type='submit', value='Рассчитать' id='submit_count')
-      if view
-        .result_field
+        if view
+          .result_field
             .inner_result
                 h1 Результат размена
                 h2=answer
