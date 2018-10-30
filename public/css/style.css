@@ -7,7 +7,7 @@ body {
 
 }
 
-.count_field, .result_field {
+.main {
     background: -moz-linear-gradient(top, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.5) 100%), url('/img/2.jpg') repeat 0 0;
     background: -webkit-linear-gradient(top, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.5) 100%), url('/img/2.jpg') repeat 0 0;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.5)), color-stop(100%,rgba(255,255,255,0.7))), url('/img/2.jpg') repeat 0 0;
@@ -29,16 +29,17 @@ footer {
 
 }
 .count_field, .result_field {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    overflow: auto;
+
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*align-content: center;*/
+    /*justify-content: center;*/
+    /*overflow: auto;*/
 }
 
 .logo {
@@ -60,6 +61,7 @@ a {
 .inner_count, .inner_result {
     margin-left: auto;
     margin-right: auto;
+    margin-top:40px;
     width: 45%;
     background: #555;
     padding: 20px 30px 20px 30px;
