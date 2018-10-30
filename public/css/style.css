@@ -131,3 +131,14 @@ label>span {
     color: #333;
     background-color: #EBEBEB;
 }
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2) {
+header, footer{
+    display: none;
+}
+    .inner_count, .inner_result{
+        width: 100%;
+    }
+}
