@@ -1,0 +1,41 @@
+doctype html
+html
+    head
+        title Coins Change
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        link(rel='stylesheet' href='/css/style.css')
+
+    body
+      nav
+      if (!view)
+        .count_field
+          h1 Произвести размен
+          if errors
+            each error, i in errors
+              div(class="alert") #{error.msg}
+          form(method='POST', action='/count')
+                      #form-group
+                          label Сумма для размена
+                          input.form-control(name='sum', type='number' )
+                      #form-group
+                          label Номинал первого вида монет
+                          input.form-control(name='acoin', type='number' min=1 max=10)
+                      #form-group
+                          label Процент монет первого номинала (%)
+                          input.form-control(name='percent', type='number' min=0 max =100 step=1)
+                      #form-group
+                          label Номинал второго вида монет
+                          input.form-control(name='bcoin', type='number' min=1 max=10)
+
+                      br
+                      input.btn(type='submit', value='Рассчитать' id='submit_count')
+      if view
+        .result_field
+            h1 Результат размена
+            h2=answer
+            a.btn(href='./') Еще раз
+      br
+      footer
+        p Ekaterina Mikhailova &copy; 2018
+
+
