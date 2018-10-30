@@ -15,7 +15,7 @@ router.post('/', function (req, res) {
     req.checkBody('sum', 'Поле "Сумма для размена" должно быть заполнено').notEmpty();
     req.checkBody('acoin', 'Поле "Номинал первого вида монет" должно быть заполнено').notEmpty();
     req.checkBody('percent', 'Поле "Процент монет первого номинала (%)" должно быть заполнено').notEmpty();
-    req.checkBody('bcoin', 'Поле "Номинал второго вида монет"').notEmpty();
+    req.checkBody('bcoin', 'Поле "Номинал второго вида монет" должно быть заполнено').notEmpty();
 
 
     // Get Errors

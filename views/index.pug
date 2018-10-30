@@ -9,33 +9,41 @@ html
       nav
       if (!view)
         .count_field
-          h1 Произвести размен
-          if errors
-            each error, i in errors
-              div(class="alert") #{error.msg}
-          form(method='POST', action='/count')
+            .inner_count
+                h1 Произвести размен
+                    span Пожалуйста, заполните все поля
+                if errors
+                   each error, i in errors
+                    div(class="alert") #{error.msg}
+                form(method='POST', action='/count')
                       #form-group
-                          label Сумма для размена
-                          input.form-control(name='sum', type='number' )
+                          label
+                            span Сумма для размена
+                            input(name='sum', type='number' )
                       #form-group
-                          label Номинал первого вида монет
-                          input.form-control(name='acoin', type='number' min=1 max=10)
+                          label
+                            span Номинал первого вида монет
+                            input(name='acoin', type='number' min=1 max=10)
                       #form-group
-                          label Процент монет первого номинала (%)
-                          input.form-control(name='percent', type='number' min=0 max =100 step=1)
+                          label
+                            span Процент монет первого номинала (%)
+                            input(name='percent', type='number' min=0 max =100 step=1)
                       #form-group
-                          label Номинал второго вида монет
-                          input.form-control(name='bcoin', type='number' min=1 max=10)
+                          label
+                            span Номинал второго вида монет
+                            input(name='bcoin', type='number' min=1 max=10)
 
                       br
                       input.btn(type='submit', value='Рассчитать' id='submit_count')
       if view
         .result_field
-            h1 Результат размена
-            h2=answer
-            a.btn(href='./') Еще раз
+            .inner_result
+                h1 Результат размена
+                h2=answer
+                a.btn(href='./') Еще раз
       br
       footer
-        p Ekaterina Mikhailova &copy; 2018
+        .logo
+            p Ekaterina Mikhailova &copy; 2018
 
 
