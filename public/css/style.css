@@ -146,5 +146,6 @@ header, footer{
 }
     .inner_count, .inner_result{
         width: 95%;
+        margin:0;
     }
 }
