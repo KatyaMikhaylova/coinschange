@@ -7,7 +7,7 @@ html
         link(rel="shortcut icon" href="#")
 
     body
-      nav
+      header
       main
         if (!view)
           .count_field
@@ -21,7 +21,7 @@ html
                       #form-group
                           label
                             span Сумма для размена
-                            input(name='sum', type='number' )
+                            input(name='sum', type='number' min=1 )
                       #form-group
                           label
                             span Номинал первого вида монет
@@ -38,14 +38,23 @@ html
                       br
                       input.btn(type='submit', value='Рассчитать' id='submit_count')
         if view
-          .result_field
-            .inner_result
-                h1 Результат размена
-                h2=answer
-                a.btn(href='./') Еще раз
+        if startdata
+            - var a = startdata.a
+            - var b = startdata.b
+            - var s = startdata.s
+             - var x = answer.x
+             - var y = answer.y
+            - var ost = answer.ost
+                .result_field
+                     .inner_result
+                         h1 Результат размена
+                         p Будет получено #{x} монет(ы) номиналом #{a}, #{y} монет(ы) номиналом #{b}. Остаток составит #{ost}.
+                         p #{a}x#{x}+#{b}x#{y}+#{ost}=#{s}
+                         a.btn(href='./') Еще раз
       br
       footer
         .logo
             p Ekaterina Mikhailova &copy; 2018
+      script(src='/js/main.js')
 
 
