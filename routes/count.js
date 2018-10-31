@@ -47,14 +47,18 @@ let final = function (data, obj) {
         return obj;
     } else {
         let test = count(data.a, data.b, data.s, data.getNod());
+        console.log (test);
         let perx = data.percent / 100;
         let percents = test.map(function (val) {
-            return (val[0] / (val[0] + val[1])).toFixed(2);
+            return (val[0] / (val[0] + val[1])).toFixed(3);
         });
-        const closest = Math.max(...percents.filter(function (val) {
-            return val < perx
+console.log(percents);
+        const closest = Math.min(...percents.filter(function (val) {
+            return val > perx
         }));
-        let m = percents.indexOf(closest.toString());
+        console.log (closest.toFixed(3));
+        let m = percents.indexOf(closest.toFixed(3).toString());
+        console.log (m);
         if (m >= 0) {
             obj.x = test[m][0];
             obj.y = test[m][1];
