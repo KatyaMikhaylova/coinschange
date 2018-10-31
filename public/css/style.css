@@ -141,6 +141,9 @@ label>span {
 and (min-device-width: 375px)
 and (max-device-width: 667px)
 and (-webkit-min-device-pixel-ratio: 2) {
+    html, body {
+        max-width: 100%;
+    }
 header, footer{
     display: none;
 }
