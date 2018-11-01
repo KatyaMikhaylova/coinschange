@@ -171,7 +171,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
         display: none;
     }
     .inner_count, .inner_result {
-        width: 95vw;
+        width: 90vw;
         margin: 0;
     }
 }
