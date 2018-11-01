@@ -146,29 +146,29 @@ label > span {
     color: #333;
     background-color: #EBEBEB;
 }
+
 @media only screen
-and (max-width: 1200px)
- {
-
-    .count_field,.inner_count, .inner_result {
-        width: 90%;
-
+and (max-width: 1200px) {
+    .count_field, .inner_count, .inner_result {
+        width: 80%;
     }
 }
+
 /*mobile styles*/
 @media only screen
 and (min-device-width: 375px)
 and (max-device-width: 667px)
 and (-webkit-min-device-pixel-ratio: 2) {
-html,body {
-    width: 100vw;
-}
+    html, body {
+        width: 100vw;
+    }
+
     header, footer {
         display: none;
     }
 
-    .count_field,.inner_count, .inner_result {
+    .count_field, .inner_count, .inner_result {
         width: 100vw;
-        margin:0;
+        margin: 0;
     }
 }
