@@ -7,12 +7,12 @@ body {
 
 }
  body {
-    background: -moz-linear-gradient(top, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.5) 100%), url('/img/2.jpg') repeat 0 0;
-    background: -webkit-linear-gradient(top, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.5) 100%), url('/img/2.jpg') repeat 0 0;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.5)), color-stop(100%,rgba(255,255,255,0.7))), url('/img/2.jpg') repeat 0 0;
-    background: -o-linear-gradient(top, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.5) 100%), url('/img/2.jpg') repeat 0 0;
-    background: -ms-linear-gradient(top, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.5) 100%), url('/img/2.jpg') repeat 0 0;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.5) 100%), url('/img/2.jpg') repeat 0 0;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.5) 100%), url('public/img/2.jpg') repeat 0 0;
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.5) 100%), url('public/img/2.jpg') repeat 0 0;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.5)), color-stop(100%,rgba(255,255,255,0.7))), url('public/img/2.jpg') repeat 0 0;
+    background: -o-linear-gradient(top, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.5) 100%), url('public/img/2.jpg') repeat 0 0;
+    background: -ms-linear-gradient(top, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.5) 100%), url('public/img/2.jpg') repeat 0 0;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.5) 100%), url('public/img/2.jpg') repeat 0 0;
 }
 
 header, footer {
@@ -141,12 +141,11 @@ label>span {
 and (min-device-width: 375px)
 and (max-device-width: 667px)
 and (-webkit-min-device-pixel-ratio: 2) {
-   
+
 header, footer{
     display: none;
 }
     .inner_count, .inner_result{
         width: 100vw;
-        height:100vh;
     }
 }
