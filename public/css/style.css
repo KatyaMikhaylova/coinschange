@@ -149,8 +149,8 @@ label > span {
 
 @media only screen
 and (max-width: 1200px) {
-    .count_field, .inner_count, .inner_result {
-        width: 80%;
+     .inner_count, .inner_result {
+        width: 90%;
     }
 }
 
@@ -167,7 +167,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
         display: none;
     }
 
-    .count_field, .inner_count, .inner_result {
+    .inner_count, .inner_result {
         width: 100vw;
         margin: 0;
     }
